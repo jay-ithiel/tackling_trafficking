@@ -33,6 +33,12 @@ export const destroyUser = id => ({
   id
 });
 
+export const REMOVE_CURRENT_USER = 'REMOVE_CURRENT_USER';
+export const removeCurrentUser = id => ({
+  type: REMOVE_CURRENT_USER,
+  id
+});
+
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const receiveCurrentUser = currentUser => ({
   type: RECEIVE_CURRENT_USER,

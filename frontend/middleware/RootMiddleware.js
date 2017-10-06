@@ -1,7 +1,9 @@
 import { applyMiddleware } from 'redux';
 
-const RootMiddleware = applyMiddleware(
+import UserMiddleware from '../features/users/UserMiddleware';
 
+const RootMiddleware = applyMiddleware(
+  UserMiddleware
 );
 
 export default RootMiddleware;
